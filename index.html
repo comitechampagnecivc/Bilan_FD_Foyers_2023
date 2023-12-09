@@ -257,6 +257,16 @@
             } else if (map.getZoom() > 17 || map.getZoom() < 12) {
                 map.removeLayer(layer_CommunesAOCChampagne_1);
             }
+            if (map.getZoom() <= 16 && map.getZoom() >= 8) {
+                map.addLayer(layer_2023_prlvts_ze_2);
+            } else if (map.getZoom() > 16 || map.getZoom() < 8) {
+                map.removeLayer(layer_2023_prlvts_ze_2);
+            }
+            if (map.getZoom() <= 16 && map.getZoom() >= 8) {
+                map.addLayer(layer_2023_prlvts_zd_3);
+            } else if (map.getZoom() > 16 || map.getZoom() < 8) {
+                map.removeLayer(layer_2023_prlvts_zd_3);
+            }
         });
             if (map.getZoom() <= 19 && map.getZoom() >= 8) {
                 map.addLayer(layer_GoogleSatellite_0);
@@ -267,6 +277,16 @@
                 map.addLayer(layer_CommunesAOCChampagne_1);
             } else if (map.getZoom() > 17 || map.getZoom() < 12) {
                 map.removeLayer(layer_CommunesAOCChampagne_1);
+            }
+            if (map.getZoom() <= 16 && map.getZoom() >= 8) {
+                map.addLayer(layer_2023_prlvts_ze_2);
+            } else if (map.getZoom() > 16 || map.getZoom() < 8) {
+                map.removeLayer(layer_2023_prlvts_ze_2);
+            }
+            if (map.getZoom() <= 16 && map.getZoom() >= 8) {
+                map.addLayer(layer_2023_prlvts_zd_3);
+            } else if (map.getZoom() > 16 || map.getZoom() < 8) {
+                map.removeLayer(layer_2023_prlvts_zd_3);
             }
             var title = new L.Control();
             title.onAdd = function (map) {
